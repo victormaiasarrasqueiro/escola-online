@@ -1,0 +1,72 @@
+﻿<div id="menu">
+<div class="navbar-default sidebar" role="navigation">
+    
+	<div class="sidebar-nav navbar-collapse">
+        
+		<ul class="nav in" id="side-menu">
+
+			<li ui-sref-active="active">
+                <a ui-sref="dashboard.home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></i> Home</a>
+            </li>
+			
+			<li ng-class="{active:collapseVar==1}">
+                
+				<a href="" ng-click="check(1)"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Informações<span class="fa arrow"></span></a>
+                
+				<ul class="nav nav-second-level" uib-collapse="collapseVar!=1">
+                    
+					<li ui-sref-active="active">
+                        <a ui-sref="app.servico"> Editar Descrição</a>
+                    </li>
+
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.servico"> Alterar Imagem</a>
+                    </li>
+
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.servico"> Cores</a>
+                    </li>
+
+                </ul>
+				
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="app.aula"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Aulas</a> 
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="app.curso.aluno"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Alunos Matriculados</a> 
+            </li>
+           	
+            <li ui-sref-active="active">
+                <a ui-sref="app.curso"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Perguntas</a> 
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="app.curso"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Comentários</a> 
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="app.curso"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Avaliação do Curso</a> 
+            </li>
+           	
+            <li ui-sref-active="active">
+                <a ui-sref="app.curso"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Estatísticas</a> 
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="app.curso"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Doações</a> 
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="app.curso"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Divulgar Curso</a> 
+            </li>
+					
+        </ul>
+		
+
+    </div>
+    <!-- /.sidebar-collapse -->
+</div> 
+</div>

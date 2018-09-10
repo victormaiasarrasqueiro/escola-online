@@ -1,0 +1,186 @@
+﻿<div class="row">
+
+	<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" style="background-color:#f5f5f5;min-height:100px;padding:0;border-right: 1px solid #e5e5e5;">
+	
+		
+		<sidebar></sidebar>
+
+
+	</div>
+
+
+	<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10" >
+
+		
+		<div class="row">
+
+		  	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px;padding-right: 0px;">
+
+			    <div style="margin-top:0px;">
+			      
+			      <ol class="breadcrumb">
+			        <li><a ui-sref="app.curso">Cursos</a></li>
+			        <li><a ui-sref="app.aula">Aulas</a></li>
+			        <li class="active">Incluir Aula</li>
+			      </ol>
+
+			    </div>
+
+			</div>
+
+		
+		</div>
+
+
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+				<div class="row">
+					<div class="col-sm-12 col-md-10">
+						<div style="font-size:16px;font-weight:bold"><i class="fa fa-book" aria-hidden="true"></i> Imagem do Curso</div>
+						<div><p style="color:#999;">Todo curso precisa de uma imagem para ser exibida no site, e esta imagem deve vir de alguma aula já cadastrada.</p></div>
+						
+					</div>
+					
+				</div>
+
+				<div class="row">    
+
+	              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+	                <div class="form-group">
+	                  <label for="nm">Nome do Curso</label>
+	                  <input name="nm" ng-model="vm.obj.nm" type="text" class="form-control" maxlength="50" >
+	                </div>
+	                
+	              </div>
+
+	            </div>
+
+	            <div class="row">    
+
+              		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+		                <div class="form-group">
+		                  <label for="ds">Breve Descrição</label>
+		                 <textarea name="ds" ng-model="vm.obj.ds" class="form-control" rows="3" placeholder="Faça um breve resumo sobre o curso"></textarea>
+		                </div>
+	                
+	              	</div>
+
+	            </div>
+
+			    <div class="row" style="margin-top:15px;">    
+
+	              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+	                <div class="form-group">
+	                  <label for="idCat">Categoria 1</label>
+	                    <select name="categoria1" id="categoria1" class="form-control"
+	                      ng-options="option._id as option.nm for option in vm.listaCategorias1"
+	                      ng-model="vm.obj.idCat1" placeholder="Selecione">
+	                  </select>
+	                </div>
+	                
+	              </div>
+
+	              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" ng-if="vm.listaCategorias2.length > 0">
+
+	                <div class="form-group">
+	                  <label for="idCat">Categoria 2</label>
+	                    <select name="categoria2" id="categoria2" class="form-control"
+	                      ng-options="option._id as option.nm for option in vm.listaCategorias2"
+	                      ng-model="vm.obj.idCat2" placeholder="Selecione">
+	                  </select>
+	                </div>
+	                
+	              </div>
+
+	              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" ng-if="vm.listaCategorias3.length > 0">
+
+	                <div class="form-group">
+	                  <label for="idCat">Categoria 3</label>
+	                    <select name="categoria3" id="categoria3" class="form-control"
+	                      ng-options="option._id as option.nm for option in vm.listaCategorias3"
+	                      ng-model="vm.obj.idCat3" placeholder="Selecione">
+	                  </select>
+	                </div>
+	                
+	              </div>
+
+	            </div>
+
+	            <div style="margin-top:22px;">
+
+					<div class="row">
+
+				        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 col-xl-5">
+				          <label for="cursos" >Selecione a imagem que será padrão deste curso.</label>
+				          <select name="cursos" id="cursos" class="form-control"
+				          ng-options="option.idVid as option.nm for option in vm.lista | orderBy:'ordem'"
+				          ng-model="vm.obj.idVid" placeholder="Selecione"></select>
+
+				        </div>
+
+				    </div>
+
+
+			    </div>
+
+			    <div style="margin-top:15px;">
+
+			    	<div class="row">
+
+			    		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10" align="center" style="margin-left: 10px; background-color:rgb(249, 249, 249);padding:20px">
+							
+							<div style="font-size:16px;color: rgb(153, 153, 153);">Veja como irá ficar a imagem principal do curso:</div>
+							<div style="margin-top:10px">
+			    			
+			    				<img src="https://i.ytimg.com/vi/{{vm.obj.idVid}}/mqdefault.jpg" class="img-responsive">
+
+			    			</div>
+
+			    			<div style="padding:20px" ng-if="!vm.obj.idVid">
+
+			    					Nenhuma imagem selecionada.
+
+			    			</div>
+
+			    		</div>
+
+			    	</div>
+
+
+			    </div>
+
+			    	<div style="margin-top:35px;">
+			
+						<div class="row">
+			  				
+			  				<div class="col-sm-12 col-md-12 col-lg-10 col-xl-10" align="center">
+
+			  
+			  					<button ng-click="vm.atualizar()" class="btn btn-primary btn-lg" type="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Alterar Curso</button>
+			  					
+			  					
+			  				</div>
+
+			  			</div>
+
+
+			  		</div>
+
+
+		 	</div>
+
+
+		</div>
+
+
+	</div>
+
+
+</div>

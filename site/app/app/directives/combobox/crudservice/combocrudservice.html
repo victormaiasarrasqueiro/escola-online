@@ -1,0 +1,16 @@
+﻿
+<div id="combobox-container">
+	
+	<ui-select id="{{_id}}" ng-model="component.select" theme="bootstrap" on-select="onSelectCallback($item, $model)" class=" input-small">
+										
+		<ui-select-match>{{$select.selected.nm}}</ui-select-match>
+		
+		<ui-select-choices repeat="item in list | filter: $select.search track by item._id">
+		  <div ng-bind-html="item.nm | highlight: $select.search"></div>
+		</ui-select-choices>
+
+	</ui-select>	
+		
+	<p ng-if="hasCad==true" style="font-size:10px;color:rgba(105, 105, 107, 0.79);text-align:right" ><a ng-click="openModal()">[ + ]{{textCad}}</a></p>
+
+</div>

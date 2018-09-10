@@ -1,0 +1,315 @@
+{ 
+    "_id" : ObjectId("57b0bd6fa92b90bc03ece57d"), 
+    "dtCad" : ISODate("2016-08-14T18:50:23.308+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "ZBKxhnqX-Q0", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57b0bd48a92b90bc03ece57c", 
+    "idCat2" : "57b0bd30a92b90bc03ece57b", 
+    "idCat1" : "57b0bd0ba92b90bc03ece579", 
+    "ds" : "Curso completo de JAVA", 
+    "nm" : "Curso completo de JAVA", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57bdcd612fbae504449eaf45"), 
+    "dtCad" : ISODate("2016-08-24T16:37:53.317+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "ctNxjtj49CE", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57bdcd212fbae504449eaf44", 
+    "idCat2" : "57bdcce62fbae504449eaf43", 
+    "idCat1" : "57bdccc62fbae504449eaf42", 
+    "ds" : "Curso completo de maquiagem", 
+    "nm" : "Curso de Maquiagem Profissional Sandra Pinatto", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57bdd1844d90d8f544942601"), 
+    "dtCad" : ISODate("2016-08-24T16:55:32.612+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "m1UAjgV6Qjc", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57bdd1504d90d8f544942600", 
+    "idCat2" : "57bdd1324d90d8f5449425fe", 
+    "idCat1" : "57bdd1084d90d8f5449425fc", 
+    "ds" : "Curso de Matemática Básica para Enem e Concursos", 
+    "nm" : "Matemática Básica para ENEM e Concursos", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57bdd67bb40310f844c2a645"), 
+    "dtCad" : ISODate("2016-08-24T17:16:43.915+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "mlWXuM9dQ1w", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57bdd1504d90d8f544942600", 
+    "idCat2" : "57bdd1324d90d8f5449425fe", 
+    "idCat1" : "57bdd1084d90d8f5449425fc", 
+    "ds" : "Curso Completo para Enem 2016", 
+    "nm" : "Curso Completo para Enem 2016", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57bde6fb5ae82e2545b2e12e"), 
+    "dtCad" : ISODate("2016-08-24T18:27:07.591+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "4eeTihGb4Hs", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57bde6d45ae82e2545b2e12d", 
+    "idCat2" : "57bde6b65ae82e2545b2e12c", 
+    "idCat1" : "57bdd1084d90d8f5449425fc", 
+    "ds" : "Curso de Matemática Financeirakdkdkd", 
+    "nm" : "Curso de Matemática Financeira jfjf", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57c504db98d2766f048422e7"), 
+    "dtCad" : ISODate("2016-08-30T04:00:27.322+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "BO7tEhYKBUg", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57bdcd212fbae504449eaf44", 
+    "idCat2" : "57bdcce62fbae504449eaf43", 
+    "idCat1" : "57bdccc62fbae504449eaf42", 
+    "ds" : "Maquiagem Básica", 
+    "nm" : "Maquiagem Básica", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0de34a82db7ea073be244"), 
+    "dtCad" : ISODate("2016-09-08T03:42:44.135+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "TAZaYjk7klo", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57b0bd48a92b90bc03ece57c", 
+    "idCat2" : "57b0bd30a92b90bc03ece57b", 
+    "idCat1" : "57b0bd0ba92b90bc03ece579", 
+    "ds" : "Curso completo de NodeJS do Basico ao Avancado", 
+    "nm" : "NodeJS", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0deb7a82db7ea073be259"), 
+    "dtCad" : ISODate("2016-09-08T03:44:55.047+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "qgGIqRFvFFk", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57b0bd48a92b90bc03ece57c", 
+    "idCat2" : "57b0bd30a92b90bc03ece57b", 
+    "idCat1" : "57b0bd0ba92b90bc03ece579", 
+    "ds" : "Curso de DjAngo para iniciandos te de trma", 
+    "nm" : "Django para Iniciantes", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e35ca82db7ea073be29b"), 
+    "dtCad" : ISODate("2016-09-08T04:04:44.143+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "eKZWQJUxRk4", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0e1e1a82db7ea073be293", 
+    "idCat2" : "57d0e187a82db7ea073be291", 
+    "idCat1" : "57d0e128a82db7ea073be28f", 
+    "ds" : "curso de Googlw", 
+    "nm" : "Google Adwords Primeiros Passos", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e3c8a82db7ea073be2a1"), 
+    "dtCad" : ISODate("2016-09-08T04:06:32.205+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "PZIh6XJ1Qws", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0e1e1a82db7ea073be293", 
+    "idCat2" : "57d0e187a82db7ea073be291", 
+    "idCat1" : "57d0e128a82db7ea073be28f", 
+    "ds" : "Curso de Google Adwords Rotamáxima", 
+    "nm" : "Curso de Google Adwords Rotamáxima", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e464a82db7ea073be2a4"), 
+    "dtCad" : ISODate("2016-09-08T04:09:08.254+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "ykq59MBgZ7o", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57bdcd212fbae504449eaf44", 
+    "idCat2" : "57bdcce62fbae504449eaf43", 
+    "idCat1" : "57bdccc62fbae504449eaf42", 
+    "ds" : "Curso de Maquiagem dos Olhos Pwklledjew d jewldj ewlkjd ewl djklewjd lkewj dleld w dh dhew dkj edhj ewdhe wkjd hewkd hewkjdh ewjkdh ewjkd hwejk hewjk hjwkhjekw hdjkew hdjkew hdkjew h", 
+    "nm" : "Maquiagem -mOlhos", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e4aea82db7ea073be2a6"), 
+    "dtCad" : ISODate("2016-09-08T04:10:22.798+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "F7KzJ7e6EAc", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0df12a82db7ea073be282", 
+    "idCat2" : "57b0bd30a92b90bc03ece57b", 
+    "idCat1" : "57b0bd0ba92b90bc03ece579", 
+    "ds" : "Curso de PHP para Iniciantes", 
+    "nm" : "Curso de PHP", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e4e4a82db7ea073be2bb"), 
+    "dtCad" : ISODate("2016-09-08T04:11:16.699+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "R_yRrYUHai0", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0df12a82db7ea073be282", 
+    "idCat2" : "57b0bd30a92b90bc03ece57b", 
+    "idCat1" : "57b0bd0ba92b90bc03ece579", 
+    "ds" : "ejd dew djdlkwe djlkewdlkewj dlkewj dklewj dlkew dlkewjd lekwj dlkew jdlkewj dlkewjd lekwjd lkwej dklwe jdklewj dklewj dklwje dkl ewjdkljew dkljew dk ejwdkl ewlkdj ewlkd jewlkdj lewkd ewdj ew", 
+    "nm" : "Curso de PHP Completo", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e57ea82db7ea073be328"), 
+    "dtCad" : ISODate("2016-09-08T04:13:50.323+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "m_5RoDBfF70", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0df12a82db7ea073be282", 
+    "idCat2" : "57b0bd30a92b90bc03ece57b", 
+    "idCat1" : "57b0bd0ba92b90bc03ece579", 
+    "ds" : "ddwedd jewd kewjdlkwej dlkwej dlkwe jdkwe jdklwej dklwe jdl wjedl jwed welkd jwkel djwkel jdlkew jdlkew dlkwe d lwedjl ew", 
+    "nm" : "Site Dinâminico com PHP", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e5fca82db7ea073be364"), 
+    "dtCad" : ISODate("2016-09-08T04:15:56.419+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "Sn6vPf6H8g0", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0df91a82db7ea073be288", 
+    "idCat2" : "57b0bd30a92b90bc03ece57b", 
+    "idCat1" : "57b0bd0ba92b90bc03ece579", 
+    "ds" : "edewd dewndede wd ewd ew dwe d we d ewd ew dw ed ew dw ed", 
+    "nm" : "Curso completo Linguagem C", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e64ea82db7ea073be36d"), 
+    "dtCad" : ISODate("2016-09-08T04:17:18.400+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "0zoJoDYknJ8", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0e2a7a82db7ea073be298", 
+    "idCat2" : "57d0e280a82db7ea073be297", 
+    "idCat1" : "57d0e113a82db7ea073be28e", 
+    "ds" : "Monte o seu Treino de Musculação em 3 passos", 
+    "nm" : "Monte o seu Treino de Musculação em 3 passos", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e6aca82db7ea073be36f"), 
+    "dtCad" : ISODate("2016-09-08T04:18:52.876+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "Idwa-sDqbmg", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0e2bba82db7ea073be299", 
+    "idCat2" : "57d0e280a82db7ea073be297", 
+    "idCat1" : "57d0e113a82db7ea073be28e", 
+    "ds" : "Acelere a queima de gordura por até 72hrs", 
+    "nm" : "Acelere a queima de gordura por até 72hrs", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e72da82db7ea073be371"), 
+    "dtCad" : ISODate("2016-09-08T04:21:01.552+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "MCSUc27fVD0", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0e2a7a82db7ea073be298", 
+    "idCat2" : "57d0e280a82db7ea073be297", 
+    "idCat1" : "57d0e113a82db7ea073be28e", 
+    "ds" : "Como dividir o seu treino?", 
+    "nm" : "Como dividir o seu treino?", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e7a9a82db7ea073be373"), 
+    "dtCad" : ISODate("2016-09-08T04:23:05.978+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "KDh6vrPkFdc", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0e2bba82db7ea073be299", 
+    "idCat2" : "57d0e280a82db7ea073be297", 
+    "idCat1" : "57d0e113a82db7ea073be28e", 
+    "ds" : "Treino Até a FALHA por quê?", 
+    "nm" : "Treino Até a FALHA por quê?", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e83ea82db7ea073be375"), 
+    "dtCad" : ISODate("2016-09-08T04:25:34.064+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "9IBjTQjLDvU", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0e2bba82db7ea073be299", 
+    "idCat2" : "57d0e280a82db7ea073be297", 
+    "idCat1" : "57d0e113a82db7ea073be28e", 
+    "ds" : "Treino de Peito atual do Ander | SAINDO DA JAULA", 
+    "nm" : "Treino de Peito atual do Ander | SAINDO DA JAULA", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57d0e8cda82db7ea073be378"), 
+    "dtCad" : ISODate("2016-09-08T04:27:57.824+0000"), 
+    "ieAtv" : true, 
+    "idVid" : "MlGkT_5Yn6s", 
+    "idUsu" : "PROV", 
+    "idCat3" : "57d0e8a9a82db7ea073be377", 
+    "idCat2" : "57d0e2f3a82db7ea073be29a", 
+    "idCat1" : "57c52b7c98d2766f048422e8", 
+    "ds" : "dewdd ed d ewd wed ew dwe dwe d wed wed wed ewd wed we dew de", 
+    "nm" : "Curso de Kamasutra", 
+    "nuAtz" : NumberInt(0), 
+    "views" : NumberInt(0), 
+    "__v" : NumberInt(0)
+}

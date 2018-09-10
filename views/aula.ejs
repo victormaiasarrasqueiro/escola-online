@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CursoVid - Centenas de Cursos e Video Aulas Totalmente Grátis!</title>
+
+  
+    
+    
+    <meta name="google-signin-client_id" content="553562464654-q20lj55m5o47t60njtolciv1tkpdhis1.apps.googleusercontent.com"></meta>
+    <meta name="author" content="i9Mind - i9Mind.com.br">
+    <meta name="description" content="Centenas de Cursos e Video Aulas gratis! Aprenda sobre: Como ganhar dinheiro, Idiomas, Educação, Vestibular, Tecnologia, Concursos Publicos, Empreendedorismo, Culinária, Moda, Beleza, Dieta, Música, Aprender tocar Violão, Cursos Profissionalizantes, Saude, Artesanato, Religiao Evangelica, Religiao Católica, Espirita, Empregos, Sexo, etc. Entre e conheça!" />
+
+       <!-- Latest compiled and minified CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link href="http://localhost:8080/assets/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,500italic,300' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:8080/assets/site.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Projeto Video Aula</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+           
+            <div class="input-group">
+              <input type="text" class="form-control buscanavbar typeahead" placeholder="O que você quer aprender?" accesskey="B" style="float: none;">
+              <span class="input-group-btn">
+                <button class="btn btn-default botaobusca" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              </span>
+            </div>
+          </form>
+        </div>
+      
+      </div>
+    
+    </nav>
+
+    <div class="container">
+      
+      <div class="row">
+
+        <div class="row" style="margin-top:10px;">
+
+          <div class="col-sm-12 col-md-8 col-lg-8">
+            <h1><%= res.curso.nm %></h1>
+          </div>
+
+        </div>
+        
+        <div class="row">
+          
+          <div class="col-sm-12 col-md-8 col-lg-8">
+
+            <div id="video-container" style="border:1px solid rgb(245, 245, 245);">
+
+              <div id="player" align="center"></div>
+              <div style="background-color:rgb(245, 245, 245);">hjhjh</div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4">
+
+            <div style="height:390px;overflow: scroll;">
+            
+              <table class="table table-bordered table-hover">
+
+                <tbody>
+                  <% res.aulas.forEach(function(aula) { %>
+
+                    <tr><td><%= aula.nm %></td></tr>
+
+                  <% }); %>
+                </tbody>
+
+              </table>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          
+          <div class="col-sm-12 col-md-8 col-lg-8">
+
+            <%= res.aulas[0].ds %>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src='../bower_components/jquery/dist/jquery.js'></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="http://localhost:8080/bower_components/typeahead.js/dist/typeahead.bundle.js"></script>
+
+    <script type="text/javascript">
+      var res =  <%- JSON.stringify(res) %>; 
+    </script>
+
+    <script type="text/javascript">
+      
+      function onYouTubeIframeAPIReady() {
+        youtubePlayer.player = new YT.Player('player', {
+          height: '390',
+          width: '100%',
+          videoId: '<%= res.aulas[0].idVid %>',
+          events: {
+            'onReady': youtubePlayer.onPlayerReady,
+            'onStateChange': youtubePlayer.onPlayerStateChange
+          }
+        });
+      }
+
+    </script>
+
+  
+
+    <script src="http://localhost:8080/assets/js/constantes.js"></script>
+    <script src="http://localhost:8080/assets/js/ajax.js"></script>
+    <script src="http://localhost:8080/assets/js/store.js"></script>
+    <script src="http://localhost:8080/assets/js/loginPrototype.js"></script>
+    <script src="http://localhost:8080/assets/js/google-plus-login.js"></script>
+    <script src="http://localhost:8080/assets/js/facebook-login.js"></script>
+    <script src="http://localhost:8080/assets/js/loginGenerico.js"></script>
+    <script src="http://localhost:8080/assets/js/funcoes.js"></script>
+    <script src="http://localhost:8080/assets/js/youtube-player.js"></script>
+
+</div>
+</body>
+</html>

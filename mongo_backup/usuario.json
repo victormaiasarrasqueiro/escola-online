@@ -1,0 +1,14 @@
+{ 
+    "_id" : ObjectId("57cba66ef92c0b9f05ff3330"), 
+    "ieAtv" : true, 
+    "tpUsu" : NumberInt(1), 
+    "email" : "victormaiasarrasqueiro@gmail.com", 
+    "img" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50", 
+    "nm" : "Victor Maia Sarrasqueiro", 
+    "google" : {
+        "email" : "victormaiasarrasqueiro@gmail.com", 
+        "img" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50", 
+        "id" : "112128272570046872757"
+    }, 
+    "__v" : NumberInt(0)
+}

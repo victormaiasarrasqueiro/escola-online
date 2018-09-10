@@ -1,0 +1,144 @@
+﻿<div class="row">
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0">
+
+    <div style="margin-top:0px;">
+      
+      <ol class="breadcrumb">
+        <li><a href="#">Cursos</a></li>
+        <li><a href="#">AngularJS</a></li>
+        <li class="active">Aulas</li>
+      </ol>
+
+    </div>
+
+    <div style="padding:15px;padding-top:5px;">
+
+      <h3 style="margin-top: 0px;">Incluindo um novo curso no site</h3>
+
+
+      <form name="form" role="form">
+
+
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-11">
+
+            <div class="row" ng-if="vm.errors.length > 0" style="margin-bottom:20px;margin-top:10px;margin-left:1px;">    
+
+              <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+                <div class="row">    
+                      
+                  <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+
+                    <ul class="nav">
+                      
+                      <li ng-repeat="item in vm.errors" style="font-size: 15px;"><span class="glyphicon glyphicon-remove danger" aria-hidden="true"></span> {{item.message}}</li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            
+            <div class="row">    
+
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                <div class="form-group">
+                  <label for="nm">Nome do Curso</label>
+                  <input name="nm" ng-model="vm.obj.nm" type="text" class="form-control" maxlength="50" >
+                </div>
+                
+              </div>
+
+            </div>
+            
+            <div class="row">    
+
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                <div class="form-group">
+                  <label for="ds">Breve Descrição</label>
+                 <textarea name="ds" ng-model="vm.obj.ds" class="form-control" rows="3" placeholder="Faça um breve resumo sobre o curso"></textarea>
+                </div>
+                
+              </div>
+
+            </div>
+            
+            <div class="row">    
+
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                <div class="form-group">
+                  <label for="idCat">Categoria 1</label>
+                    <select name="categoria1" id="categoria1" class="form-control"
+                      ng-options="option._id as option.nm for option in vm.listaCategorias1"
+                      ng-model="vm.obj.idCat1" placeholder="Selecione">
+                  </select>
+                </div>
+                
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" ng-if="vm.listaCategorias2.length > 0">
+
+                <div class="form-group">
+                  <label for="idCat">Categoria 2</label>
+                    <select name="categoria2" id="categoria2" class="form-control"
+                      ng-options="option._id as option.nm for option in vm.listaCategorias2"
+                      ng-model="vm.obj.idCat2" placeholder="Selecione">
+                  </select>
+                </div>
+                
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" ng-if="vm.listaCategorias3.length > 0">
+
+                <div class="form-group">
+                  <label for="idCat">Categoria 3</label>
+                    <select name="categoria3" id="categoria3" class="form-control"
+                      ng-options="option._id as option.nm for option in vm.listaCategorias3"
+                      ng-model="vm.obj.idCat3" placeholder="Selecione">
+                  </select>
+                </div>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+         <div class="row" style="margin:30px;">    
+                  
+              <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+
+                <div align="center">
+
+                  <a ui-sref="app.curso" class="btn btn-default" style="align:center;">
+                   <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>&nbsp;Cancelar
+                  </a>
+
+                  <button ng-click="vm.inserir()" class="btn btn-primary" style="align:center;">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Incluir novo Curso
+                  </button>
+
+                </div>
+
+              </div>
+              
+            </div>
+
+      </form>
+
+    </div>
+      
+  </div>
+
+</div>

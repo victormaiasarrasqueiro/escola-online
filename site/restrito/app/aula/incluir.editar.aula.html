@@ -1,0 +1,200 @@
+﻿<div class="row">
+
+	<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" style="background-color:#f5f5f5;min-height:100px;padding:0;border-right: 1px solid #e5e5e5;">
+	
+		
+		<sidebar></sidebar>
+
+
+	</div>
+
+
+	<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10" >
+
+		
+		<div class="row">
+
+		  	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px;padding-right: 0px;">
+
+			    <div style="margin-top:0px;">
+			      
+			      <ol class="breadcrumb">
+			        <li><a ui-sref="app.curso">Cursos</a></li>
+			        <li><a ui-sref="app.aula">Aulas</a></li>
+			        <li class="active">Incluir Aula</li>
+			      </ol>
+
+			    </div>
+
+			</div>
+
+		
+		</div>
+
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div style="font-size:16px;font-weight:bold"><i class="fa fa-book" aria-hidden="true"></i>
+						<span ng-if="vm.idOpe===1">Incluir Nova Aula</span><span ng-if="vm.idOpe===2">Alterar Aula</span>
+						</div>
+					</div>
+				</div>
+
+				<div style="margin-top:15px;">
+
+
+
+					<div class="row" style="margin-bottom:35px;">
+  				
+		  				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				   
+				   			<div class="row" style="margin-top:5px;">		 
+								
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+									<div class="form-group">
+										<label for="nm">Título da Aula</label>
+										<input name="nm" ng-model="vm.obj.nm" type="text" class="form-control" maxlength="30" style="font-size:16px;" >
+									</div>
+									
+								</div>
+
+							</div>
+
+							<div class="row">		 
+								
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+									<div class="form-group">
+										<label for="idVid">Vídeo</label>
+										<div class="input-group">
+											<span class="input-group-addon" id="video">https://youtu.be/</span>
+											<input name="idVid" ng-model="vm.obj.idVid" type="text" class="form-control" maxlength="45" aria-describedby="video" >
+										</div>
+									</div>
+									
+								</div>
+
+							</div>
+
+							<div class="row" style="margin-top:15px;">		 
+								
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+									<div class="form-group">
+										<label for="ds">Breve Descrição</label>
+										<textarea name="ds" ng-model="vm.obj.ds" class="form-control" rows="3" placeholder="Faça um breve resumo sobre esta aula. Ex: Aprenda a ganhar dinheiro na internet publicando seus cursos."></textarea>
+									</div>
+									
+								</div>
+
+							</div>
+
+				   		</div>
+
+		  				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				   			
+				   			<div class="row">
+
+				   				<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12" style="padding:10px;">
+
+				   					<div ng-if="vm.obj.idVid"><youtube-video video-id="vm.obj.idVid" player-width="'98%'" player-height="'300px'" ></youtube-video></div>
+				   					<div ng-if="!vm.obj.idVid" style="padding:40px;border-right: 1px solid #e5e5e5;background-color: #d9edf7;margin: 40px;" align="center">
+				   						<p style="font-size:20px;"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span></p>
+				   						<p><b>Nenhum vídeo selecionado.</b><p>
+				   						<p>Caso tenha dificuldades em cadastrar suas aulas do Youtube, clique aqui e acesse nosso guia rápido!</p>
+				   					</div>
+
+				   				</div>
+
+				   			</div>
+
+				   		</div>
+
+				   	</div>
+
+				   	<hr/>
+
+
+	   			   	<div style="margin-top:35px;">
+			
+						<div class="row">
+			  				
+			  				<div class="col-sm-12 col-md-12 col-xl-12">
+
+								<div class="row">		 
+									
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+										<div class="form-group">
+											
+											<label for="ds"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;O que os alunos irão aprender?</label>
+											<p style="text-align:justify;text-justify: inter-word"><small>Digite palavras chaves que realmente traduzem esta única aula. <b>Tente digitar os itens que os seus alunos irão aprender de fato neste vídeo.</b></small></p>
+											<div style="height:10%">
+											<tags-input ng-model="vm.tagsObject" max-tags=10 type="text" min-length="3" placeholder="{{vm.tagsPlaceholder}}"></tags-input>
+											</div>
+
+										</div>
+										
+									</div>
+
+								</div>
+
+					   		</div>
+
+					   	</div>
+
+					</div>
+
+					<hr/>
+
+				   	<div class="row" style="margin-top:35px;">
+
+				   		<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+				   			<div class="form-group">
+				   				<label for="ds"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;&nbsp;Descrição Completa.</label>
+				   				<p style="text-align:justify;text-justify: inter-word"><small> Seja Criativo! Escreva a <b>descrição completa da aula, o que os alunos irão aprender, os requisitos para entender e acompanhar a aula, links externos como pastas virtuais ( Google Drive, OneDrive, etc ), outras aulas, sites externos para consultas, etc.</b> Clique aqui para ver exemplos!</small></p>
+				   				<wysiwyg textarea-id="dsExt" textarea-class="form-control"  textarea-height="400px" textarea-name="dsExt" ng-model="vm.obj.dsExt"  textarea-menu="vm.customMenu"></wysiwyg>
+				   			</div>
+
+				   		</div>
+
+				   	</div>
+
+
+				   	<div style="margin-top:35px;">
+			
+						<div class="row">
+			  				
+			  				<div class="col-sm-12 col-md-12 col-xl-12">
+
+			  					<div align="center" ng-if="vm.idOpe===1"><button ng-click="vm.incAlt()" class="btn btn-success btn-lg" type="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Incluir Aula</button></div>
+
+			  					<div align="center" ng-if="vm.idOpe===2"><button ng-click="vm.incAlt()" class="btn btn-primary btn-lg" type="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Alterar Aula</button></div>
+
+			  				</div>
+
+			  			</div>
+
+
+			  		</div>
+					
+
+			    </div>
+
+
+		 	</div>
+
+
+		</div>
+
+
+	</div>
+
+
+</div>

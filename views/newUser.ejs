@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="google-signin-client_id" content="553562464654-q20lj55m5o47t60njtolciv1tkpdhis1.apps.googleusercontent.com"></meta>
+    <title>CursoVid - Centenas de Cursos e Video Aulas Totalmente Grátis!</title>
+    
+    <meta name="author" content="i9Mind - i9Mind.com.br">
+
+    <meta name="description" content="Centenas de Cursos e Video Aulas gratis! Aprenda sobre: Como ganhar dinheiro, Idiomas, Educação, Vestibular, Tecnologia, Concursos Publicos, Empreendedorismo, Culinária, Moda, Beleza, Dieta, Música, Aprender tocar Violão, Cursos Profissionalizantes, Saude, Artesanato, Religiao Evangelica, Religiao Católica, Espirita, Empregos, Sexo, etc. Entre e conheça!" />
+
+       <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link href="assets/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,500italic,300' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="assets/site.css" rel="stylesheet">
+
+    <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/react-dom.js"></script>  
+
+</head>
+<body>
+<div>
+
+    Novo Usuario
+
+
+
+
+        <div class="container">
+
+            <div class="row">    
+
+              <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4">
+
+                <div class="form-group">
+                  <label for="nm">Nome</label>
+                  <input id="nm" name="nm" type="text" class="form-control" maxlength="50" >
+                </div>
+                
+              </div>
+
+            </div>
+
+            <div class="row">    
+
+              <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4">
+
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input id="email" name="email" type="mail" class="form-control" maxlength="50" >
+                </div>
+                
+              </div>
+
+            </div>
+
+            <div class="row">    
+
+              <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4">
+
+                <button class="btn btn-success" onclick="functions.incNewUser()">Confirmar</button>
+                
+              </div>
+
+            </div>
+
+
+        </div>
+
+
+  
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+
+    <script src="http://localhost:8080/assets/js/constantes.js"></script>
+    <script src="http://localhost:8080/assets/js/ajax.js"></script>
+    <script src="http://localhost:8080/assets/js/store.js"></script>
+    <script src="http://localhost:8080/assets/js/loginPrototype.js"></script>
+    <script src="http://localhost:8080/assets/js/google-plus-login.js"></script>
+    <script src="http://localhost:8080/assets/js/facebook-login.js"></script>
+    <script src="http://localhost:8080/assets/js/loginGenerico.js"></script>
+    <script src="http://localhost:8080/assets/js/funcoes.js"></script>
+
+
+    <script type="text/javascript">
+        
+        $( document ).ready(function() {
+         
+           
+            $('#nm').val( store.get(constantes.login.localStorage.newUser.nm ) );
+            $('#email').val( store.get( constantes.login.localStorage.newUser.email ) );
+
+        });
+
+
+    </script>
+
+
+</div>
+</body>
+</html>

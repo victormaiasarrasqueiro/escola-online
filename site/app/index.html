@@ -1,0 +1,131 @@
+<html lang="en" >
+
+<head>
+  
+  <title>Area Restrita</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,500italic,300' rel='stylesheet' type='text/css'>
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href='../bower_components/ng-tags-input/ng-tags-input.css' rel='stylesheet' type="text/css" >
+  <link href='../bower_components/ng-tags-input/ng-tags-input.bootstrap.css' rel='stylesheet' type="text/css" >
+  <link href="../bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="../bower_components/angular-bootstrap-colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
+  <link href="../bower_components/angular-loading-bar/build/loading-bar.css" rel="stylesheet" type="text/css">
+  <link href="../bower_components/toastr/toastr.css" rel="stylesheet" type="text/css">
+
+  <link href="../assets/css/menu.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/estilo.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body ng-app="app">
+
+ 
+  <div id="loading-bar-container"></div>
+
+  <div ui-view></div>
+
+  <script src='../bower_components/jquery/dist/jquery.js'></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src='../bower_components/angular/angular.js'></script>
+  <script src='../bower_components/angular-animate/angular-animate.js'></script>
+  <script src='../bower_components/angular-sanitize/angular-sanitize.js'></script>
+  <script src="../bower_components/angular-locale-pt-br/angular-locale_pt-br.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  
+  <!-- Sortable.js -->
+  <script src="../bower_components/Sortable/Sortable.js"></script>
+  <script src="../bower_components/Sortable/ng-sortable.js"></script>
+
+  <!-- YouTube -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="../bower_components/angular-youtube-mb/src/angular-youtube-embed.js"></script>
+
+
+  <script src='../bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.js'></script>
+  <script src='../bower_components/angular-wysiwyg/dist/angular-wysiwyg.js'></script>
+  <script src='../bower_components/ng-tags-input/ng-tags-input.js'></script>
+  <script src='../bower_components/ngstorage/ngStorage.js'></script>
+
+  <script src='../bower_components/angular-youtube-api-factory/dist/angular-youtube-api-factory.min.js'></script>
+
+  <script src='../bower_components/angular-loading-bar/build/loading-bar.js'></script>
+
+  <script src='../bower_components/toastr/toastr.js'></script>
+
+
+
+
+  <!-- Sistema -->
+
+  <!-- Core  -->
+  <script src="app/app.module.js"></script>
+  <script src="app/core/core.module.js"></script>
+  <script src="app/blocks/router/router.module.js"></script>
+  <script src="app/blocks/router/router-helper.provider.js"></script>
+  <script src="app/blocks/logger/logger.module.js"></script>
+  <script src="app/blocks/logger/logger.factory.js"></script>
+  <script src="app/app.controller.js"></script>
+  <script src="app/app.route.js"></script>
+  <script src="app/app.run.js"></script>
+  <script src="app/directives/directives.module.js"></script>
+
+  
+
+  <script src="app/directives/sidebar/sidebar.directive.js"></script>
+
+  <!-- Categoria  -->
+  <script src="app/categoria/categoria.module.js"></script>
+  <script src="app/categoria/categoria.controller.js"></script>
+  <script src="app/categoria/categoria.route.js"></script>
+
+  <!-- Cursos  -->
+  <script src="app/curso/curso.module.js"></script>
+  <script src="app/curso/curso.controller.js"></script>
+  <script src="app/curso/curso.route.js"></script>
+
+  <script src="app/curso/incluir.curso.controller.js"></script>
+  <script src="app/curso/editar.curso.controller.js"></script>
+
+  
+
+
+  <!-- Aulas  -->
+  <script src="app/aula/aula.module.js"></script>
+  <script src="app/aula/aula.route.js"></script>
+  <script src="app/aula/aula.controller.js"></script>
+  <script src="app/aula/playlist.aula.controller.js"></script>
+  
+
+  <script src="app/aula/incluir.editar.aula.controller.js"></script>
+
+
+  <!-- Alunos  -->
+  <script src="app/aluno/aluno.module.js"></script>
+  <script src="app/aluno/aluno.route.js"></script>
+  <script src="app/aluno/aluno.controller.js"></script>
+
+
+  <script src="app/service/crud.service.js"></script>
+  <script src="app/service/validate.service.js"></script>
+  <script src="app/service/tabela.service.js"></script>
+  <script src="app/service/aula.service.js"></script>
+  <script src="app/service/aluno.service.js"></script>
+  <script src="app/service/categoria.service.js"></script>
+  <script src="app/service/youtube.service.js"></script>
+  <script src="app/service/curso.service.js"></script>
+
+  <script src="app/directives/combobox/tabelaservice/combotabelaservice.directive.js"></script>
+
+
+</body>
+</html>

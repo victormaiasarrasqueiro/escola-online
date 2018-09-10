@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,500italic,300' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="assets/site.css" rel="stylesheet">
+
+    <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/react-dom.js"></script>
+    <script src="https://cdn.jsdelivr.net/remarkable/1.6.2/remarkable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Projeto Video Aula</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      
+      <div class="row">
+        
+        <div class="col-sm-3 col-md-2 sidebar">
+          
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+
+          <hr class="guide-section-separator">
+          
+          <ul class="nav nav-sidebar">
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+
+        </div>
+        
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          
+          <div class="row" >
+
+            <div class="col-sm-12 col-md-12">
+            <div align="center" ><img src="images/anuncio728x90.png" ></div>
+            </div>
+
+          </div>
+
+           <div id="content"></div>
+
+          <div class="row" style="margin-top:10px;">
+            
+
+            <div class="col-sm-12 col-md-12" style="background-color:white;border-bottom: 1px solid #e2e2e2;">
+
+             <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:10px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Cursos em alta agora - Brasil
+              </div>
+
+             </div>
+            
+           
+            <div class="row">
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:10px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Cursos em alta agora - Brasil
+              </div>
+
+             </div>
+            
+           
+            <div class="row">
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:10px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Cursos em alta agora - Brasil
+              </div>
+
+             </div>
+            
+           
+            <div class="row">
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:10px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+<b>Cursos em alta agora - Brasil</b>
+              </div>
+
+             </div>
+            
+           
+            <div class="row">
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-right:7px;padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-2" style="padding-left:7px;">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google leto de Googl leto de AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+       
+
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:10px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Cursos Populares
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+             
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:20px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Informática & Tecnologia
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:20px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Idiomas
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+             
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+<div class="row" style="margin-top:20px;"">
+
+            <div class="col-sm-12 col-md-12">
+            <div align="center" ><img src="images/anuncio728x90.png" ></div>
+            </div>
+
+          </div>
+
+
+
+
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:27px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Administração & Financias
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+             
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:20px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Vestibular & Concursos
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+             
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:20px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Saúde & Beleza 
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+             
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:20px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+              Empreendedorismo
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+             
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+              <div class="col-sm-12 col-md-12" style="margin-top:30px;margin-bottom:7px;font-size:14px;font-family: 'Roboto',arial,sans-serif;white-space: normal;vertical-align: middle;">
+Links Patrocinados
+              </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+             
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="http://media02.hongkiat.com/angularjs-tutorials-screencast/angularjs.jpg" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6OVMqpC0d8mOBqpChrBEF6svVFCihJ-G5P79xb1Jpsck2IxVT" class="img-responsive" 
+                 alt="Clique para acessar o curso">
+                  <div class="caption">
+                    <p class="thumbtitle">Curso Completo de Google AngularJS</p>
+                    <p class="thumbprof">Professor Victor</p>
+                    <p class="thumbprof">1547 visualizações | 1 dia atras</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+<BR>
+<BR>
+<BR>
+
+           
+         
+            
+
+
+
+
+
+            </div>
+
+
+
+          </div>
+
+                          </div>
+          
+      </div>
+    
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script type="text/babel" src="assets/js/comp/App.js"></script>
+
+  </body>
+
+</html>

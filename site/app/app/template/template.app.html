@@ -1,0 +1,35 @@
+<div id="template" class="container-fluid">
+
+    <!-- Header and Navigation --> 
+	<div class="row" style="background:#1c81d2;height: 50px;color:white;z-index:10999;box-sizing:border-box;border-width: 0 0 1px;">
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			
+			<div ui-view="header"></div>
+		
+		</div>
+
+	</div>
+	
+	<div class="row">
+	
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+			
+			<div ui-view="content"></div>
+
+		</div>
+
+	</div>
+
+	<div class="row">
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			
+			<div ui-view="footer"></div>
+		
+		</div>
+
+	</div>
+
+</div>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+ 
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Projeto Video Aula</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+           
+            <div class="input-group">
+              <input type="text" class="form-control buscanavbar" placeholder="O que você quer aprender?" accesskey="B">
+              <span class="input-group-btn">
+                <button class="btn btn-default botaobusca" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+    </nav>
+
+    <div class="container-fluid">
+      
+      <div class="row">
+        
+        <div class="col-sm-3 col-md-2 sidebar" style="position: initial;">
+          
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início <span class="sr-only">(current)</span></a></li>
+             <li><a href="#"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Em Alta</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Mais Queridos</a></li>
+          </ul>
+
+          <hr class="guide-section-separator">
+          
+          <div align="center" style="color:#999;font-size: 10px;font-family: 'Roboto', arial, sans-serif;">O MELHOR DO SITE</div>
+
+          <ul class="nav nav-sidebar">
+            <li><a href="#"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Tema</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Tema</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Tema</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Tema</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Tema</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Tema</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Tema</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Tema</a></li>
+          </ul>
+
+          <hr class="guide-section-separator">
+
+          <div align="center">Faça seu login grátis, se matricule no cursos, tenha acesso total e turbine a sua carreira! </div>
+
+
+        </div>
+        
+        <div class="col-sm-9 col-md-10 main">
+          
+          <div class="row" >
+
+            <div class="col-sm-12 col-md-12">
+            <div align="center" ><img src="images/anuncio728x90.png" ></div>
+            </div>
+
+          </div>
+
+          <div id="content"></div>
+
+        </div>
+          
+      </div>
+    
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="assets/js/comp/App.js"></script>
+
+    <script type="text/javascript">
+      
+      $.get('api/web/homepage',function(value){
+
+        alert('lll' + value.sessoes.length);
+
+
+      })
+
+
+
+    </script>
+
+  </body>
+
+</html>

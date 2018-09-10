@@ -1,0 +1,40 @@
+﻿.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white; 
+}
+
+.sidebar {
+    position: relative;
+}
+
+.aulas{
+	 list-style-type: none;
+	 padding-left: 0px;
+
+}
+.aulas li{
+	background-color: #d9edf7;
+	padding: 15px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	margin-top:5px;
+	cursor: move;
+  	cursor: -webkit-grabbing;
+  	border-bottom: 1px solid #e2e2e2;
+}
+
+.btn-group-margin-bottom{
+
+	margin-bottom: 5px;
+}
+.breadcrumb {
+    border-radius: 0px;
+    padding: 10px 15px;
+    margin-top: 0px;
+}
+
+#loading-bar .bar {
+background: red;
+
+}
+
+

@@ -1,0 +1,97 @@
+﻿
+<div class="row" style="margin-top:30px">
+
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+		<div class="row">
+			
+			
+			<div class="col-sm-12 col-md-6">
+				<div style="font-size:16px;font-weight:bold"><i class="fa fa-book" aria-hidden="true"></i> Categorias</div>
+				<div><p style="color:#999;">Inclua, Edite, Exclua e Ordene as Categorias de Cursos!</p></div>
+			</div>
+
+
+		</div>
+
+		<div style="margin-top:15px;">
+
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+
+					<input type="text" ng-model="vm.obj.nm" class="form-control">
+
+
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
+
+					<button class="btn btn-primary" ng-click="vm.inserir()"> Incluir</button>
+
+
+				</div>
+
+			</div>
+
+	    </div>
+
+	    <div style="margin-top:15px;">
+
+	    	<div class="row">
+	    		
+	    		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	    			<div align="right"><button class="btn btn-default" ng-click="vm.carregarPai('{{ vm.obj.pai }}')"> Voltar</button></div>
+	    		</div>
+
+	    	</div>
+
+	    	<div class="row" style="margin-top:20px;">
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+			    	<table class="table">
+			    		
+			    		<tr>
+			    			
+			    			<td width="60%">Nome</td>
+			    			<td width="10%">Status</td>
+			    			<td width="10%">Ordem</td>
+			    			<td width="10%">&nbsp;</td>
+			    			<td width="10%">&nbsp;</td>
+			    		
+
+			    		</tr>
+
+			    		<tr ng-repeat="it in vm.lista  track by $index ">
+			    			
+			    			<td><input type="text" ng-model="it.nm" class="form-control"></td>
+			    			<td>
+				    			<select ng-model="it.ieAtv" class="form-control">
+				    				
+				    				<option value="true">Ativo</option>
+				    				<option value="false">Inativo</option>
+
+				    			</select>
+			    			</td>
+			    			<td><input type="number" ng-model="it.ordem" class="form-control"></td>
+			    			<td align="center"><button class="btn btn-warning" class="form-control" ng-click="vm.atualizar($index)"> Atualizar</button></td>
+			    			
+			    			<td align="center"><button class="btn btn-primary" class="form-control" ng-click="vm.carregarFilhos(it._id)"> Filhos</button></td>
+
+			    		</tr>
+
+			    	</table>
+
+			    </div>
+
+			</div>
+
+	    </div>
+
+
+ 	</div>
+
+
+</div>
